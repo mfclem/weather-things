@@ -1,5 +1,5 @@
 ---
-name: city-weather-forecast
+name: my-city-forecast
 description: Get weather forecast from the web and format a report out of it
 ---
 
