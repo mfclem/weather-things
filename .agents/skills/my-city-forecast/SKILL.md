@@ -17,3 +17,6 @@ From the extracted data format the city weather forecast report as follows:
 "In " + <city name> + " tomorrow," + <Date> +", the weather forecast is: " + <forecast description>.
 "Maximum temperature will be " + <High temperature> + " and lowest temperature will be " + <low temperature> 
 
+## Create output file
+Create an output file with exactly the formatted content, with filename: <city name>_<date>_forecast.txt
+Commit and push it at the root of the Github repository. 

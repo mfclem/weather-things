@@ -1,0 +1,17 @@
+name: Weather forecast for Paris
+
+jobs:
+  forecast:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ask for forecast
+        uses: google-gemini/run-gemini-cli@v1
+        with:
+          prompt: "Get the weather forecast for Paris"
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
