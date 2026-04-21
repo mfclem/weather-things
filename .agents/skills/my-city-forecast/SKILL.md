@@ -1,21 +1,19 @@
 ---
 name: my-city-forecast
-description: Get weather forecast from the web and format a report out of it
+description: Get city weather forecast from the web and format a report out of it
 ---
 
-# (to be worked out below)
+# Weather retrieving and report computing logic
 
-## Base url
-Use this Splunk search URL as a base for work on generating other search URls:  https://prod.splunk.tools.sap/en-US/app/u1800_azure_pipelines/azure_pipelines_-_projects_-_pipelines_execution_and_pipeline_teams_count?form.timePicker.earliest=-7d%40d&form.timePicker.latest=now&form.org=hyperspace-pipelines&form.org=hyperspace-pipelines-2&form.nbExecutionDays=1
+## Get th weather forecast
+Get the weather forecast for th specified city from https://weather.com/
+Then, from that, extract the following forecast data for the next day:
+- Date
+- forecast description in a one liner
+- High and low temperatures
 
-# Skill parameters
-The arguments for this skill are the following (in that order):
-1. number of Execution Days
-2. number of chuncks in those execution days
+## Formatting the report
+From the extracted data format the city weather forecast report as follows:
+"In " + <city name> + " tomorrow," + <Date> +", the weather forecast is: " + <forecast description>.
+"Maximum temperature will be " + <High temperature> + " and lowest temperature will be " + <low temperature> 
 
-## Date/time for NB Pipelines Execution Days
-Divide the number of execution days specified in parameter from today and back in time into as many chunk as specified in parameter.
-For each days chunk, generate the 
-
-## How to fill forms
-...
