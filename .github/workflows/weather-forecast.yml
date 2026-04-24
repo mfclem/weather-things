@@ -11,7 +11,7 @@ jobs:
       - name: Ask for forecast
         uses: google-github-actions/run-gemini-cli@v0
         with:
-          prompt: "Get the weather forecast for Paris"
+          prompt: "Just say hello"
           gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
         env:
           GEMINI_CLI_TRUST_WORKSPACE: true
