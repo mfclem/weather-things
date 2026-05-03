@@ -1,4 +1,4 @@
-⁹name: Weather forecast for Paris
+name: Weather forecast for Paris
 on: workflow_dispatch
 jobs:
   forecast:
